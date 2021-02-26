@@ -14,6 +14,7 @@ RUN apk add --no-cache \
   nmap \
   openssh-client \
   openssl \
+  postgresql-client \
   redis \
   rsync \
   tcpdump \
