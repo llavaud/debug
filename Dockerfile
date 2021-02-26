@@ -1,3 +1,21 @@
 FROM alpine:latest
 
-RUN apk add --no-cache bash bind-tools busybox-extras ca-certificates curl jq mtr nmap openssh redis rsync tcpdump tcpflow wget
+RUN apk add --no-cache \
+  bash \
+  bind-tools \
+  busybox-extras \
+  ca-certificates \
+  curl \
+  git \
+  iptraf-ng \
+  jq \
+  mtr \
+  mysql-client \
+  nmap \
+  openssh-client \
+  openssl \
+  redis \
+  rsync \
+  tcpdump \
+  tcpflow \
+  wget
