@@ -6,6 +6,7 @@ RUN apk add --no-cache \
   busybox-extras \
   ca-certificates \
   curl \
+  docker-cli \
   git \
   iptraf-ng \
   jq \
