@@ -20,3 +20,5 @@ RUN apk add --no-cache \
   tcpdump \
   tcpflow \
   wget
+
+CMD ["bash"]
