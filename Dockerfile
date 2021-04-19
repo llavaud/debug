@@ -8,6 +8,8 @@ RUN apk add --no-cache \
   curl \
   docker-cli \
   git \
+  glances \
+  htop \
   iptraf-ng \
   jq \
   mtr \
