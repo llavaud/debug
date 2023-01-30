@@ -12,6 +12,7 @@ RUN apk add --no-cache \
   htop \
   iptraf-ng \
   jq \
+  lftp \
   mtr \
   mysql-client \
   nmap \
@@ -22,6 +23,7 @@ RUN apk add --no-cache \
   rsync \
   tcpdump \
   tcpflow \
+  tcptraceroute \
   wget
 
 CMD ["bash"]
