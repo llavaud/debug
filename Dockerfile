@@ -21,6 +21,7 @@ RUN apk add --no-cache \
   postgresql-client \
   redis \
   rsync \
+  strace \
   tcpdump \
   tcpflow \
   tcptraceroute \
