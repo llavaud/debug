@@ -1,11 +1,16 @@
 FROM alpine:latest
 
-RUN apk add --no-cache \
+RUN echo "https://dl-cdn.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories && \
+  echo "https://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories && \
+  echo "https://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories
+
+RUN apk update && apk add --no-cache \
   bash \
   bind-tools \
   busybox-extras \
   ca-certificates \
   curl \
+  dnsperf \
   docker-cli \
   git \
   glances \
@@ -26,5 +31,7 @@ RUN apk add --no-cache \
   tcpflow \
   tcptraceroute \
   wget
+
+RUN rm -rf /var/cache/apk/*
 
 CMD ["bash"]
